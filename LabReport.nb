@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     41867,        950]
-NotebookOptionsPosition[     30102,        693]
-NotebookOutlinePosition[     37848,        891]
-CellTagsIndexPosition[     37805,        888]
+NotebookDataLength[     51003,       1138]
+NotebookOptionsPosition[     38484,        869]
+NotebookOutlinePosition[     46252,       1068]
+CellTagsIndexPosition[     46209,       1065]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -586,9 +586,185 @@ Therefore the answer to the question is a probability of 7/11, or roughly 64 \
 %. \
 \>", "Text",
  CellChangeTimes->{{3.934958182792626*^9, 3.934958234461692*^9}, {
-  3.9349582739343243`*^9, 
-  3.9349582870366077`*^9}},ExpressionUUID->"d160651b-70cb-4776-a22b-\
+  3.9349582739343243`*^9, 3.9349582870366077`*^9}, {3.934969146725726*^9, 
+  3.9349692783077435`*^9}, {3.934972011447625*^9, 
+  3.934972012210728*^9}},ExpressionUUID->"d160651b-70cb-4776-a22b-\
 7d64bc7eafe6"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["An alternate solution - Bertrand\[CloseCurlyQuote]s ballot theorem", \
+"Subsection",
+ CellChangeTimes->{{3.934971682897252*^9, 
+  3.934971691050658*^9}},ExpressionUUID->"e65161cf-4c93-4f9e-badd-\
+0c31a93dbab3"],
+
+Cell[TextData[{
+ "After having completed the assignment this way, we found through some \
+research that there was an already established method of solving exactly this \
+issue. There is a theorem known as ",
+ ButtonBox["Bertrand's ballot theorem",
+  BaseStyle->"Hyperlink",
+  ButtonData->{
+    URL["https://en.wikipedia.org/wiki/Bertrand%27s_ballot_theorem"], None},
+  ButtonNote->"https://en.wikipedia.org/wiki/Bertrand%27s_ballot_theorem"],
+ ", which rules that the number of favourable sequences can be calculated in \
+the following way:"
+}], "Text",
+ CellChangeTimes->{{3.934958182792626*^9, 3.934958234461692*^9}, {
+  3.9349582739343243`*^9, 3.9349582870366077`*^9}, {3.934969146725726*^9, 
+  3.9349692783077435`*^9}, {3.9349717206468363`*^9, 3.9349717250554743`*^9}, {
+  3.9349718250893574`*^9, 
+  3.934971837460969*^9}},ExpressionUUID->"e874269b-a34b-444e-be32-\
+333f03326675"],
+
+Cell[BoxData[
+ GraphicsBox[
+  TagBox[RasterBox[CompressedData["
+1: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
+tELoaaprAFlUV5ygcBhzqG1iZmlt6dKlESugwMzMzPj4eKkmq0x+dfGMGTOg
+3rRpUy30iod0ptzAqbi4WDhnhEasgCwkI9P/ASqFige8l4/bofezZeDw7fOB
+AwdEfLVuH04UkfUUXVkxsweoo3w9M+VamizNmcnuqyW+++47Ed94oaDqQhaC
+QFFRkd+8+ADJrEHE14LVAJcvXxYBP/zwQ7958QESimuhd39+8+IJcOCxsbEG
+AUb1hryZIpWuxv0rCeCCBQv85sUHzJ49W0Lx6rphGLk6depkkADOnDkztSrA
+XmKO1MiOBqpx/8oSJVlzxAr0b1JVgL3+nT9/PrK3aNGiGvfvI488gowLFy70
+mxcfILv9a9euXY37t2HDhsi4YsUKv3nxAYWFhRI/X7x40W9ePAH9e++99yLg
+p59+6jcvPkD2Jbr1qrESQuW/X331ld+8+ACkFvEr7AhGBePMmTMi4JEjR/zm
+xQcwbEX89evX+82LJ5DdKffcc091TfCNUVpaGhMTU42Xd7755hstdN6kap1V
+dwtYteyzNX7/W3Uhm8T69+9fYf17+/bt5cuXVxJzghk5uZCenu43L55gzJgx
+SDdp0qQKSwBRaWJione3H1iF7MZs06aNp+fjfAESJSUlybaiCpOusvWvbJyr
+yBQY33Xjxg0V8HjnyhizjRo1km1FJhnTb5vk6/Xr12HVkm047F855qbY0N8n
+YA9yqErz8kIVBTkj37t3b9xFfHz8/Pnz582b16NHD4+CW9loajK7px8HDRpU
+p06dJ5988tq1a7m5ufXr1+dzu3btlixZYt69UxOJbCiTfiTaz8rKQjONGzfu
+27fv7t27mTcdnt9XR6iiXcvgFujcnJycevXqFRUViYmK8jMyMjyaHD///HPZ
+qVVu+1To3r07SaLsBk9NTR0wYAAcotg333xT+/fJTWPYG788tXfvXljF/s+e
+PYuuhgwZQtgP6XXr1llqKhxyqHnYsGEO2zEACszOzoZKQUGBKhw+fDglixYt
+8oiobI5FY+Xav+xDk3MEWugIoZo1ZP566qmnTBqhvf49d+4cjiIuLu7KlStS
+cvr0aejWrVv30qVLlpoKhySJBmdpnUMWyvDMioRcR0bhtm3bvKBI+xJcmbmX
+EhuYOHEiXSNGqH/ZJEcI8dsRJ5HSMFCN/uWpiD9FY1XOduGKVeHOnTspQUXO
+O4UWnnvuudjYWI92YdE+s4kWOk2vCpFX3ux4FF+J0TKlmmlfwhj+ikvU3+og
+I5ry8N5RoalJMC9HpL5x40apoN/FKqeQTN4/UC7krNzs2bOdNxUOQhe5f6C4
+uFgV7tixQ/Ny68i4ceO00KFL8/o5evQoj/Ts2VN/fl/yx8zMzIh8ujJ+5Rhm
+TEyMcs7wLNetuPXai0QA/09Y+/fff7vSoB7iamrUqEFcqgrxgRSOGDHCdXLg
+woULzZo1izjoDCBGrr8TgE6Rvf3md31bnX+pTzgnU7wqhO7DDz9M4ZkzZ8zz
+b0xF7hRy5balMjh06JD273PWfJCDGKjUdXJ3/jkUaSayUlCnufXnU1avXk0J
+rJqfRGz0r6hCT1cutGnVqpWLkxchXMuWLbt06eK6w8TtNG/evFGjRqpluWtL
+c+lypzKAipyltXQdNE+hTy10RFRKGPu9evVi/JJHm2/HRvwsU4DqX/qU7Eyc
+m4vLbmqucX0rOEzm5+eLl8PhQEUOY3oUsZOCaaE3JpaUoy4C0kKHWYi6iWbp
+XD54vX4ld3n16dMHQ3r77bcVG3gP842YJARvycnJrqtdrjsgZhg/fvz27dtJ
+RrTQDXjuUrkTOofevn17wnWrnm3NmjVa6D0LIRlKSEtLI4K1cSG8vfwXX4HZ
+N2nSZOzYsWpFMdrVXk4gMb9Haw6ShiCL+E8vNhWQAjARWP2/GOAKxcJSYWHh
+HWc3uNpef1aXvP3www+auWU3G8DsCddr1669detW1xtXJOD/wQcfdD3zJcFp
+0KDBsmXLrGqG+nLA+cSJEw55oINg4OTJk7ZbkBXRrKwsj955yeJnp06dXPcP
+creDLAtj5OTFLpooTb388svEJFbNhgfl3lQtdHWMj+9JJUeWMM/54V8DyKVJ
+5AvuugiJfPTQr8g5gZzrT0hI+O233yw9qA4ouc6SVcBJ+JKXd12MJcfFxRHO
+uWjPhCvqMka5kNC5PxSQthOcmLwttgzU7YgC7yYmM5wo5RDD88FTZ0LK0LZt
+28pwpYwx0EbNmjXN3+YdQMH5/oEKgLwa8JuLAAECBAgQIECAAAECBAgQIECA
+AAECBAgQoFrh/yzc1J8=
+    "], {{0, 47.4}, {96., 0}}, {0, 255},
+    ColorFunction->RGBColor,
+    ImageResolution->{120., 120.},
+    SmoothingQuality->"High"],
+   BoxForm`ImageTag["Byte", ColorSpace -> "RGB", Interleaving -> True],
+   Selectable->False],
+  DefaultBaseStyle->"ImageGraphics",
+  ImageSize->Automatic,
+  ImageSizeRaw->{96., 47.4},
+  PlotRange->{{0, 96.}, {0, 47.4}}]], "Input",ExpressionUUID->"aad9c9f4-200b-\
+4b48-997c-9fc3ec3b09a4"],
+
+Cell[TextData[{
+ "There are many shapes and ways to write the theorem, but in this case ",
+ StyleBox["p",
+  FontSlant->"Italic"],
+ " is the number of ballots thrown for the candidate supposed to remain \
+strictly in the lead, and ",
+ StyleBox["q",
+  FontSlant->"Italic"],
+ " is the number of ballots thrown for the other candidate. In our case ",
+ StyleBox["p",
+  FontSlant->"Italic"],
+ " = 9 and ",
+ StyleBox["q",
+  FontSlant->"Italic"],
+ " = 2. This gives us:"
+}], "Text",
+ CellChangeTimes->{{3.9349692959016266`*^9, 3.9349693429573545`*^9}, {
+  3.9349714385502453`*^9, 3.934971465242264*^9}, {3.9349718407940474`*^9, 
+  3.9349718495808077`*^9}},ExpressionUUID->"d7b8577e-8c08-419b-a83f-\
+5aede922291c"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Binomial", "[", 
+   RowBox[{
+    RowBox[{"9", "+", "2"}], ",", " ", "2"}], "]"}], 
+  RowBox[{"(", 
+   RowBox[{
+    RowBox[{"(", 
+     RowBox[{"9", "-", "2"}], ")"}], "/", 
+    RowBox[{"(", 
+     RowBox[{"9", "+", "2"}], ")"}]}], ")"}]}]], "Input",
+ CellChangeTimes->{{3.934971470508856*^9, 3.9349715537113843`*^9}, {
+  3.9349715880945883`*^9, 3.9349715989225388`*^9}},
+ CellLabel->"In[2]:=",ExpressionUUID->"5ceabef4-e984-4522-9c9f-f09dedaf70d7"],
+
+Cell[BoxData["35"], "Output",
+ CellChangeTimes->{3.9349715463427143`*^9, 3.9349715907324877`*^9},
+ CellLabel->"Out[2]=",ExpressionUUID->"56ac1ec2-691a-4651-9214-0e5f85db3e50"]
+}, Open  ]],
+
+Cell["\<\
+This 35 would then be used to calculate the probability in the same way as in \
+the previous solution, by having it be divided with the total number of ways. \
+The resulting quotient would again be 7/11, which could already be discerned \
+from Bertrand\[CloseCurlyQuote]s ballot theorem above as the second factor.\
+\>", "Text",
+ CellChangeTimes->{{3.934971734699127*^9, 
+  3.9349718143050346`*^9}},ExpressionUUID->"f30fb711-6162-4013-9ea2-\
+fc4b48cbf8b0"]
 }, Open  ]]
 }, Open  ]],
 
@@ -691,8 +867,9 @@ explain the thought-process behind them and how they work.\
 }, Open  ]]
 }, Open  ]]
 },
-WindowSize->{1133.3999999999999`, 568.8},
-WindowMargins->{{0, Automatic}, {Automatic, 0}},
+WindowSize->{1152, 579.6},
+WindowMargins->{{
+  Automatic, -5.399999999999864}, {-5.399999999999977, Automatic}},
 PageHeaders->{{None, None, None}, {
    Cell[
     TextData[{"KTH/ICT - Kommunikationssystem"}], "PageHeader", FontFamily -> 
@@ -904,7 +1081,7 @@ Cell[1805, 63, 2078, 33, 348, "Text",ExpressionUUID->"8ad5d4da-afa2-434b-a402-a9
 }, Open  ]],
 Cell[CellGroupData[{
 Cell[3920, 101, 83, 0, 41, "Subsection",ExpressionUUID->"39a0ef6c-6a2c-4081-9062-84513a76c571"],
-Cell[4006, 103, 1556, 26, 264, "Text",ExpressionUUID->"90c1cbf5-a4eb-4e8c-ad08-b66c37545d27"],
+Cell[4006, 103, 1556, 26, 243, "Text",ExpressionUUID->"90c1cbf5-a4eb-4e8c-ad08-b66c37545d27"],
 Cell[5565, 131, 638, 20, 47, "Input",ExpressionUUID->"a80c6013-eebe-4815-99b4-d257d30cd140"],
 Cell[6206, 153, 873, 25, 54, "Text",ExpressionUUID->"dac7d079-5a1d-44e2-92c2-3e9f49886386"],
 Cell[7082, 180, 314, 10, 45, "Input",ExpressionUUID->"dc304521-ab96-44c8-a91b-ddd9e65b2ef1"],
@@ -939,15 +1116,26 @@ Cell[22805, 519, 940, 17, 96, "Text",ExpressionUUID->"bb662758-9107-4256-81fe-94
 Cell[23748, 538, 367, 11, 49, "Text",ExpressionUUID->"223a39d8-b370-4b05-8f7d-365cc73ab8de"],
 Cell[24118, 551, 430, 8, 54, "Text",ExpressionUUID->"fd13580f-2df5-4cdb-b66f-f99f25de5dbb"],
 Cell[24551, 561, 584, 20, 66, "Text",ExpressionUUID->"b8172aff-bdcd-42b9-a27f-5a260fa60dbb"],
-Cell[25138, 583, 285, 7, 33, "Text",ExpressionUUID->"d160651b-70cb-4776-a22b-7d64bc7eafe6"]
+Cell[25138, 583, 382, 8, 33, "Text",ExpressionUUID->"d160651b-70cb-4776-a22b-7d64bc7eafe6"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[25557, 596, 216, 4, 41, "Subsection",ExpressionUUID->"e65161cf-4c93-4f9e-badd-0c31a93dbab3"],
+Cell[25776, 602, 884, 17, 54, "Text",ExpressionUUID->"e874269b-a34b-444e-be32-333f03326675"],
+Cell[26663, 621, 5269, 92, 60, "Input",ExpressionUUID->"aad9c9f4-200b-4b48-997c-9fc3ec3b09a4"],
+Cell[31935, 715, 705, 19, 54, "Text",ExpressionUUID->"d7b8577e-8c08-419b-a83f-5aede922291c"],
+Cell[CellGroupData[{
+Cell[32665, 738, 481, 13, 28, "Input",ExpressionUUID->"5ceabef4-e984-4522-9c9f-f09dedaf70d7"],
+Cell[33149, 753, 175, 2, 32, "Output",ExpressionUUID->"56ac1ec2-691a-4651-9214-0e5f85db3e50"]
+}, Open  ]],
+Cell[33339, 758, 466, 8, 54, "Text",ExpressionUUID->"f30fb711-6162-4013-9ea2-fc4b48cbf8b0"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[25472, 596, 221, 4, 59, "Section",ExpressionUUID->"6f74f2bf-a15d-4d5d-8cd0-63f075e8906d"],
-Cell[25696, 602, 2682, 53, 222, "Text",ExpressionUUID->"84f1d7e2-5215-4d51-85a4-b6f589be78f3"],
+Cell[33854, 772, 221, 4, 59, "Section",ExpressionUUID->"6f74f2bf-a15d-4d5d-8cd0-63f075e8906d"],
+Cell[34078, 778, 2682, 53, 222, "Text",ExpressionUUID->"84f1d7e2-5215-4d51-85a4-b6f589be78f3"],
 Cell[CellGroupData[{
-Cell[28403, 659, 162, 3, 41, "Subsection",ExpressionUUID->"9fe31c69-8ff2-476b-a021-e9d2c265644b"],
-Cell[28568, 664, 1482, 23, 222, "Text",ExpressionUUID->"583545a9-dc2f-47ba-beb0-3638642bd282"]
+Cell[36785, 835, 162, 3, 41, "Subsection",ExpressionUUID->"9fe31c69-8ff2-476b-a021-e9d2c265644b"],
+Cell[36950, 840, 1482, 23, 222, "Text",ExpressionUUID->"583545a9-dc2f-47ba-beb0-3638642bd282"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]]
