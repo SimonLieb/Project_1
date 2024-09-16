@@ -14,8 +14,9 @@
 # permutations of that number of Ls and Us. All those permutations are added to the all_paths list,
 # whose reference we passed in the method parameters.
 
-def generate_combinations(u_count, l_count, current_path, all_paths):
-    paths_to_expand = [(current_path, u_count, l_count)]
+def generate_combinations(u_count, l_count):
+    all_paths = []
+    paths_to_expand = [('', u_count, l_count)]
     
     while paths_to_expand:
         current_path, remaining_u, remaining_l = paths_to_expand.pop(0)
@@ -30,6 +31,7 @@ def generate_combinations(u_count, l_count, current_path, all_paths):
             if remaining_l > 0:
                 new_path = current_path + 'L'
                 paths_to_expand.append((new_path, remaining_u, remaining_l - 1))
+    return all_paths
 
 # Before the loop starts, an empty list `temp_list` is initialized to store paths that pass through the desired level.
 # For each path in `all_paths`, the function checks if following that path will pass through the given `level`.
@@ -76,8 +78,7 @@ u_moves = (end[1] - start[1] + total_moves) // 2
 l_moves = total_moves - u_moves
 
 # Generate all possible paths
-all_possible_paths = []
-generate_combinations(u_moves, l_moves, '', all_possible_paths)
+all_possible_paths = generate_combinations(u_moves, l_moves)
 
 print("Amount of possible paths:")
 print(len(all_possible_paths))
