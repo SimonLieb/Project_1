@@ -77,12 +77,12 @@ end = (7, 2)
 
 # Calculate the total moves and breakdown into U and L moves
 total_moves = end[0] - start[0]
-up_moves = (end[1] - start[1] + total_moves) // 2
-left_moves = total_moves - up_moves
+u_moves = (end[1] - start[1] + total_moves) // 2
+l_moves = total_moves - u_moves
 
 # Generate all possible paths
 all_possible_paths = []
-generate_combinations(up_moves, left_moves, '', all_possible_paths)
+generate_combinations(u_moves, l_moves, '', all_possible_paths)
 
 # Filter paths that go through y = 0
 filtered_paths = goesThroughY(all_possible_paths, 0)
